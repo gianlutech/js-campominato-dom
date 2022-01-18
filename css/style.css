@@ -1,0 +1,14 @@
+#grid{
+    height: 500px;
+    width: 500px; 
+    border: 2px dashed; 
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#grid .cell{
+    border: 1px solid;
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+}
