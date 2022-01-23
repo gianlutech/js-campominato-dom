@@ -1,14 +1,35 @@
-#grid{
-    height: 500px;
-    width: 500px; 
-    border: 2px dashed; 
-    margin: 50px auto;
-    display: flex;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+/* Utilities */
+.container {
+    max-width: 1000px;
+    margin: 100px auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+#grid {
+    height: 600px;
+    width: 600px;
+    border: 1px solid black;
+    margin: 100px auto;
+    display: none;
     flex-wrap: wrap;
 }
+#grid .cell {
+    border: 1px solid black;
+    cursor: pointer;
+}
 
-#grid .cell{
-    border: 1px solid;
-    height: calc(100% / 10);
-    width: calc(100% / 10);
+.safe {
+    background-color: dodgerblue;
+}
+
+.bomb {
+    background-color: red;
 }
